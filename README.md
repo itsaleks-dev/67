@@ -180,3 +180,45 @@ Result
 • Server optimized for working with large datasets
 • All new routes are protected by authorization middleware
 • Functionality tested via Thunder Client and curl
+
+## HOME WORK 68
+
+Dockerization of Express application with MongoDB using Docker Compose
+
+At this stage, the existing Express application was containerized using Docker
+and integrated with MongoDB via Docker Compose.
+
+Technologies used
+
+• Docker
+• Docker Compose
+• Node.js (node:lts)
+• Express.js
+• MongoDBё
+
+Dockerfile
+
+• Created a Dockerfile based on the node:lts image
+• Set the working directory to /app
+• Copied project files into the container
+• Installed project dependencies
+• Exposed port 3000
+• Defined the application startup command
+
+Docker Compose
+
+• Created a docker-compose.yml file
+• Added an Express application service
+• Added a MongoDB service using the official mongo image
+• Configured the MONGODB_URI environment variable
+• Used depends_on to manage service dependencies
+• Configured volumes for live code synchronization
+
+⸻
+
+Testing and Result
+
+• Containers were started using docker-compose up
+• Application is accessible at http://localhost:3000
+• MongoDB connection is established successfully
+• Code changes are applied automatically using volumes

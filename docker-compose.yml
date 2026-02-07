@@ -1,0 +1,28 @@
+services:
+  api:
+    build: .
+    container_name: express-api
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      MONGO_URI: mongodb://mongo:27017/express_auth
+      SESSION_SECRET: docker_secret
+    depends_on:
+      - mongo
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev
+
+  mongo:
+    image: mongo:6
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
