@@ -222,3 +222,91 @@ Testing and Result
 • Application is accessible at http://localhost:3000
 • MongoDB connection is established successfully
 • Code changes are applied automatically using volumes
+
+
+## HOME WORK 69
+
+Basic Mongo Shell operations, aggregation, and indexes
+
+At this stage, the project focused on strengthening practical skills
+in working directly with MongoDB using Mongo Shell (mongosh).
+
+The main objectives of this stage are:
+• Learning basic Mongo Shell commands
+• Managing databases, collections, and documents
+• Practicing CRUD operations directly in the shell
+• Using aggregation pipelines for data analysis
+• Creating and testing indexes for query optimization
+
+Technologies used
+• MongoDB
+• Mongo Shell (mongosh)
+• Docker (MongoDB container)
+
+⸻
+
+Database and collection management
+
+• Created a new database studentDB using Mongo Shell
+• Created a collection assignments
+• Inserted multiple documents using insertMany
+
+Each document contains:
+• name — student name
+• subject — subject name
+• score — student score
+
+⸻
+
+Basic queries and document operations
+
+Implemented the following operations in Mongo Shell:
+
+• find() — retrieving all documents
+• Filtering documents using comparison operators ($gt, $lt)
+• Updating documents using:
+• updateOne
+• $inc operator to increase numeric values
+• Deleting documents using:
+• deleteOne
+• Projection in find() to return only selected fields
+
+⸻
+
+Aggregation operations
+
+Aggregation pipelines were implemented to analyze data from the assignments collection.
+
+Aggregation tasks included:
+• Grouping documents by subject
+• Calculating the average score per subject
+• Filtering aggregation results by average score
+
+MongoDB aggregation operators used:
+• $group
+• $avg
+• $match
+
+⸻
+
+Indexes and query optimization
+
+To practice query optimization, indexes were introduced:
+
+• Created a unique index on the name field
+• Executed search queries using regular expressions
+• Verified index usage using explain("executionStats")
+
+Execution plan analysis confirmed:
+• Index scan (IXSCAN) is used instead of collection scan (COLLSCAN)
+• Queries are optimized through the created index
+
+⸻
+
+Result
+
+• Practical Mongo Shell skills strengthened
+• CRUD operations successfully performed directly in Mongo Shell
+• Aggregation pipelines applied for data analysis
+• Indexes created and validated for performance optimization
+• Understanding of how MongoDB executes and optimizes queries improved
