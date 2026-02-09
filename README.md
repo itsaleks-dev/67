@@ -223,7 +223,6 @@ Testing and Result
 • MongoDB connection is established successfully
 • Code changes are applied automatically using volumes
 
-
 ## HOME WORK 69
 
 Basic Mongo Shell operations, aggregation, and indexes
@@ -234,7 +233,7 @@ in working directly with MongoDB using Mongo Shell (mongosh).
 The main objectives of this stage are:
 • Learning basic Mongo Shell commands
 • Managing databases, collections, and documents
-• Practicing CRUD operations directly in the shell. 
+• Practicing CRUD operations directly in the shell.
 • Using aggregation pipelines for data analysis
 • Creating and testing indexes for query optimization
 
@@ -310,3 +309,13 @@ Result
 • Aggregation pipelines applied for data analysis
 • Indexes created and validated for performance optimization
 • Understanding of how MongoDB executes and optimizes queries improved
+
+## HOME WORK 70
+
+At this stage, the project was refactored to use **Mongoose** instead of
+the MongoDB Node.js Driver.
+
+Database access was fully migrated to Mongoose models, and schemas with
+validation and indexing were introduced. The rest of the application
+logic remained unchanged, as Passport.js and Express.js work on top of
+Mongoose.
