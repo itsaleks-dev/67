@@ -234,7 +234,7 @@ in working directly with MongoDB using Mongo Shell (mongosh).
 The main objectives of this stage are:
 • Learning basic Mongo Shell commands
 • Managing databases, collections, and documents
-• Practicing CRUD operations directly in the shell
+• Practicing CRUD operations directly in the shell. 
 • Using aggregation pipelines for data analysis
 • Creating and testing indexes for query optimization
 
